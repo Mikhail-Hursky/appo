@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;500&display=swap');
+
+$bg: #223047;
+$primary: #00fff1;
+$secondary: #919eb8;
+
+.buttons {
+  background-color: $primary;
+  outline: none;
+  border: none;
+  text-align: center;
+  border-radius: 7px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+body {
+  font-family: 'Dosis';
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1170px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
+
+

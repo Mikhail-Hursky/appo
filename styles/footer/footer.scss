@@ -1,0 +1,30 @@
+.footer {
+  background-color: $bg;
+
+  .container {
+    @media (max-width: 585px) {
+      justify-content: center;
+    }
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+    align-items: center;
+
+    .text {
+      font-size: 17px;
+      line-height: 2.941;
+      color: $primary;
+    }
+
+    .list {
+      margin-right: 10px;
+      width: 320px;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+    }
+  }
+}
+

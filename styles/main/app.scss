@@ -1,0 +1,117 @@
+.main__app {
+  min-height: 701px;
+  background-color: #f5f6fa;
+  position: relative;
+
+  .container {
+    display: flex;
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .app {
+      &__images {
+        position: relative;
+        margin-left: 99px;
+        margin-top: 96px;
+        flex: 1;
+        @media (max-width: 1100px) {
+          margin: 50px auto;
+          padding: 0;
+        }
+
+        img {
+          box-shadow: 0 0 20px $primary;
+
+        }
+
+        .image {
+          &-1 {
+            position: relative;
+            z-index: 2;
+            height: 507px;
+            border-radius: 31px;
+          }
+
+          &-2 {
+            @media (max-width: 600px) {
+              display: none;
+            }
+            top: 89px;
+            left: 182px;
+            z-index: 1;
+            position: absolute;
+            height: 388px;
+            border-radius: 24px;
+          }
+        }
+      }
+
+      &__description {
+        max-width: 458px;
+        margin-top: 177px;
+        margin-right: 111px;
+        padding-top: 33px;
+        @media (max-width: 1100px) {
+          margin: 0 auto 80px;
+          padding: 0;
+        }
+
+        .tittle {
+          font-size: 40px;
+          margin: 0 0 23px 0;
+          letter-spacing: 1px;
+          font-weight: 500;
+          line-height: 1.25;
+        }
+
+        .text {
+          @media (max-width: 510px) {
+            font-size: 14px;
+          }
+          font-size: 17px;
+          line-height: 1.706;
+          color: #acb6cb;
+          margin-bottom: 59px;
+        }
+      }
+
+      &__buttons {
+        button {
+          outline: none;
+          border: none;
+          width: 144px;
+          height: 43px;
+        }
+
+        &-google {
+          background-image: url("../../assets/images/btnPM.png");
+          margin-right: 20px;
+        }
+
+        &-apple {
+          background-image: url("../../assets/images/BtnIStore.png");
+        }
+      }
+
+    }
+  }
+
+  &-btn {
+    @media (max-width: 410px) {
+      left: calc((100% - 90%) / 2);
+      width: 90%;
+    }
+    position: absolute;
+    bottom: -35px;
+    left: calc((100% - 371px) / 2);
+    width: 371px;
+    height: 71px;
+    font-size: 17px;
+    line-height: 2.941;
+    text-transform: uppercase;
+    box-shadow: 0 8px 24px 0 rgba(0, 255, 241, 0.5);
+  }
+}
+

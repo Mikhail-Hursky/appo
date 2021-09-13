@@ -14,19 +14,18 @@ $secondary: #919eb8;
   font-size: 14px;
 }
 
+.buttonPrim  {
+  background-color: $primary
+}
+
+header {
+  background: $bg;
+}
+
+
+
 body {
   font-family: 'Dosis';
-}
-
-.container {
-  max-width: 1170px;
-  margin: 0 auto;
-}
-
-@media (max-width: 1170px) {
-  .container {
-    padding: 0 20px;
-  }
 }
 
 

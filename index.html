@@ -6,29 +6,46 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link rel="stylesheet" href="./styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Appo</title>
 </head>
 <body>
 <header>
-    <div class="container header">
-        <div class="header__logo">
-            <h1 class="logo">appo<sup>®</sup></h1>
-        </div>
-        <nav>
-            <ul class="header__nav">
-                <li class="nav__item">Home
-                    <img class="nav__item-arrow" src="./assets/icon/Arrow.png" alt="navigation arrow"/>
-                </li>
-                <li class="nav__item">Features</li>
-                <li class="nav__item">Pricing</li>
-            </ul>
-        </nav>
-        <div class="header__buttons">
-            <button class="header__btn buttons">Get The App</button>
-            <button class="header__hamburger">
-                <span></span><span></span><span></span>
-            </button>
+    <div class="container">
+        <div class="row">
+            <div class="col tittle">
+                <h1>appo<sup>®</sup></h1>
+            </div>
+            <nav class="col-6 row navigation">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                            Home
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <button class="btn">
+                        Features
+                    </button>
+                </div>
+                <div class="col">
+                    <button class="btn" >
+                        Pricing
+                    </button>
+                </div>
+            </nav>
+            <div class="col ">
+                <div class="row d-flex">
+                    <button class="buttonPrim btn mt-2">Get The App</button>
+                </div>
+            </div>
         </div>
     </div>
 </header>
@@ -181,5 +198,6 @@
         </ul>
     </div>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
 </body>
 </html>

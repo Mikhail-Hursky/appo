@@ -37,10 +37,29 @@ header .navigation .btn {
   color: #919eb8;
 }
 
+.menu {
+  outline: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu svg {
+  fill: #00fff1;
+  width: 40px;
+  height: 40px;
+}
+
 .section_header {
   background-color: #223047;
   padding-top: 135px;
   height: 630px;
+}
+@media (max-width: 400px) {
+  .section_header {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
 }
 .section_header .container {
   margin: 0 auto;
@@ -128,8 +147,18 @@ header .navigation .btn {
   margin: 10px 25px 0;
 }
 
+@media (max-width: 1400px) {
+  .cards {
+    gap: 182px;
+  }
+}
+@media (max-width: 1199px) {
+  .cards {
+    gap: 20px;
+  }
+}
 .main__app {
-  min-height: 701px;
+  min-height: fit-content;
   background-color: #f5f6fa;
   position: relative;
 }
@@ -226,20 +255,6 @@ header .navigation .btn {
 .main__app .container .relative {
   position: relative;
 }
-.main__app .container .btn_abs {
-  position: absolute;
-  text-transform: uppercase;
-  width: 33%;
-  height: 40px;
-  bottom: -20px;
-  left: calc((100% - 33%)/2);
-}
-@media (max-width: 410px) {
-  .main__app .container .btn_abs {
-    left: calc((100% - 90%) / 2);
-    width: 90%;
-  }
-}
 .main__app-btn {
   position: absolute;
   bottom: -35px;
@@ -250,6 +265,24 @@ header .navigation .btn {
   line-height: 2.941;
   text-transform: uppercase;
   box-shadow: 0 8px 24px 0 rgba(0, 255, 241, 0.5);
+}
+
+.btn_abs {
+  position: absolute;
+  text-transform: uppercase;
+  width: 50%;
+  height: 50px;
+  bottom: -20px;
+  left: calc((100% - 50%)/2);
+}
+.btn_abs button {
+  width: 100%;
+}
+@media (max-width: 450px) {
+  .btn_abs {
+    left: calc((100% - 80%)/2);
+    width: 80%;
+  }
 }
 
 .main__about .container .main__info {
@@ -294,14 +327,13 @@ header .navigation .btn {
 }
 
 .form {
-  width: 500px;
+  width: 98%;
   margin-top: 65px;
   margin-bottom: 94px;
   display: flex;
 }
 @media (max-width: 460px) {
   .form {
-    flex-direction: column;
     gap: 10px;
     align-items: center;
   }
@@ -322,6 +354,13 @@ header .navigation .btn {
   height: 50px;
   box-shadow: 0 8px 24px 0 rgba(0, 255, 241, 0.5);
   text-transform: uppercase;
+}
+
+@media (max-width: 440px) {
+  .about {
+    gap: 10px;
+    align-items: start;
+  }
 }
 
 .footer {

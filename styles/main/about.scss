@@ -56,9 +56,8 @@
 }
 
 .form {
-  width: 500px;
+  width: 98%;
   @media (max-width: 460px) {
-    flex-direction: column;
     gap: 10px;
     align-items: center;
   }
@@ -85,5 +84,12 @@
     text-transform: uppercase;
   }
 
+}
+
+.about{
+  @media (max-width: 440px) {
+    gap: 10px;
+    align-items: start;
+  }
 }
 

@@ -2,6 +2,10 @@
   background-color: $bg;
   padding-top: 135px;
   height: 630px;
+  @media (max-width: 400px) {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
 
   .container {
     margin: 0 auto;

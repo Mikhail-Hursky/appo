@@ -46,3 +46,15 @@
      }
    }
 }
+
+@media (max-width: 1400px)  {
+  .cards {
+    gap:182px;
+  }
+}
+
+@media (max-width: 1199px)  {
+  .cards {
+    gap:20px;
+  }
+}

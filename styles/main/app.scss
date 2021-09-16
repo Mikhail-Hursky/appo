@@ -1,5 +1,5 @@
 .main__app {
-  min-height: 701px;
+  min-height: fit-content;
   background-color: #f5f6fa;
   position: relative;
 
@@ -106,22 +106,10 @@
       position: relative;
     }
 
-    .btn_abs {
-      position: absolute;
-      text-transform: uppercase;
-      width: 33%;
-      height: 40px;
-      bottom: -20px;
-      left: calc((100% - 33%)/2);
-      @media (max-width: 410px) {
-        left: calc((100% - 90%) / 2);
-        width: 90%;
-      }
-    }
+
   }
 
   &-btn {
-
     position: absolute;
     bottom: -35px;
     left: calc((100% - 371px) / 2);
@@ -134,3 +122,19 @@
   }
 }
 
+
+.btn_abs {
+  position: absolute;
+  text-transform: uppercase;
+  width: 50%;
+  height: 50px;
+  bottom: -20px;
+  left: calc((100% - 50%)/2);
+  button {
+    width: 100%;
+  }
+  @media (max-width: 450px) {
+    left: calc((100% - 80%)/2);
+    width: 80%;
+  }
+}

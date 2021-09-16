@@ -10,6 +10,11 @@
       align-items: center;
     }
 
+    .storeBtn {
+      width: 144px ;
+      height: 43px;
+    }
+
     .app {
       &__images {
         position: relative;
@@ -96,13 +101,27 @@
       }
 
     }
+
+    .relative {
+      position: relative;
+    }
+
+    .btn_abs {
+      position: absolute;
+      text-transform: uppercase;
+      width: 33%;
+      height: 40px;
+      bottom: -20px;
+      left: calc((100% - 33%)/2);
+      @media (max-width: 410px) {
+        left: calc((100% - 90%) / 2);
+        width: 90%;
+      }
+    }
   }
 
   &-btn {
-    @media (max-width: 410px) {
-      left: calc((100% - 90%) / 2);
-      width: 90%;
-    }
+
     position: absolute;
     bottom: -35px;
     left: calc((100% - 371px) / 2);

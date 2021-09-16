@@ -49,38 +49,41 @@
           color: #97a4be;
         }
 
-        .form {
-          @media (max-width: 460px) {
-            flex-direction: column;
-            gap: 10px;
-            align-items: center;
-          }
-          margin-top: 65px;
-          margin-bottom: 94px;
-          display: flex;
 
-          input {
-            flex: 1;
-            width: 100%;
-            height: 50px;
-            margin-right: 10px;
-          }
-
-          button {
-            outline: none;
-            border: none;
-            background-color: $primary;
-            font-size: 17px;
-            line-height: 2.941;
-            width: 170px;
-            height: 50px;
-            box-shadow: 0 8px 24px 0 rgba(0, 255, 241, 0.5);
-            text-transform: uppercase;
-          }
-
-        }
       }
     }
   }
+}
+
+.form {
+  width: 500px;
+  @media (max-width: 460px) {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+  margin-top: 65px;
+  margin-bottom: 94px;
+  display: flex;
+
+  input {
+    flex: 1;
+    width: 100%;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  button .btn .btn-outline-secondary {
+    outline: none;
+    border: none;
+    background-color: $primary;
+    font-size: 17px;
+    line-height: 2.941;
+    width: 170px;
+    height: 50px;
+    box-shadow: 0 8px 24px 0 rgba(0, 255, 241, 0.5);
+    text-transform: uppercase;
+  }
+
 }
 

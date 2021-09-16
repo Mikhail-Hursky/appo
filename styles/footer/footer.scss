@@ -1,29 +1,23 @@
 .footer {
   background-color: $bg;
+  color: #ffffff;
 
-  .container {
-    @media (max-width: 585px) {
-      justify-content: center;
+  .list {
+    list-style: none;
+    width: 300px;
+  }
+
+  .social {
+    transition: 500ms;
+    svg {
+      width: 30px;
+      fill: #ffffff;
     }
-    min-height: 100px;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-between;
-    align-items: center;
-
-    .text {
-      font-size: 17px;
-      line-height: 2.941;
-      color: $primary;
+    :hover {
+        fill: $primary;
     }
-
-    .list {
-      margin-right: 10px;
-      width: 320px;
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      padding: 0;
+    :active {
+      transform: rotate(360deg);
     }
   }
 }

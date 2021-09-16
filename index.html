@@ -6,11 +6,53 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./styles/normalize.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/style.css">
     <title>Appo</title>
 </head>
 <body>
+<!--SVG sprites-->
+<svg display="none">
+    <symbol id="facebook" viewBox="0 0 32 32">
+        <g data-name="facebook fb face book" id="facebook_fb_face_book">
+            <path d="M24,3H8A5,5,0,0,0,3,8V24a5,5,0,0,0,5,5h8a1,1,0,0,0,1-1V20a1,1,0,0,0-1-1H15V17h1a1,1,0,0,0,1-1V12.5A2.5,2.5,0,0,1,19.5,10H22v2H21a2,2,0,0,0-2,2v2a1,1,0,0,0,1,1h1.72l-.5,2H20a1,1,0,0,0-1,1v4a1,1,0,0,0,2,0V21h1a1,1,0,0,0,1-.76l1-4a1,1,0,0,0-.18-.86A1,1,0,0,0,23,15H21V14h2a1,1,0,0,0,1-1V9a1,1,0,0,0-1-1H19.5A4.51,4.51,0,0,0,15,12.5V15H14a1,1,0,0,0-1,1v4a1,1,0,0,0,1,1h1v6H8a3,3,0,0,1-3-3V8A3,3,0,0,1,8,5H24a3,3,0,0,1,3,3V24a3,3,0,0,1-3,3H20a1,1,0,0,0,0,2h4a5,5,0,0,0,5-5V8A5,5,0,0,0,24,3Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="discord" viewBox="0 0 32 32">
+        <g data-name="discord group forum message" id="discord_group_forum_message">
+            <path d="M9.82,17.41a3.1,3.1,0,0,0,2.9,3.26,3.1,3.1,0,0,0,2.89-3.26,3.11,3.11,0,0,0-2.89-3.27A3.11,3.11,0,0,0,9.82,17.41Zm3.79,0c0,.68-.41,1.26-.89,1.26s-.9-.58-.9-1.26.41-1.27.9-1.27S13.61,16.72,13.61,17.41Z"/>
+            <path d="M19.28,14.14a3.11,3.11,0,0,0-2.89,3.27,3.1,3.1,0,0,0,2.89,3.26,3.1,3.1,0,0,0,2.9-3.26A3.11,3.11,0,0,0,19.28,14.14Zm0,4.53c-.48,0-.89-.58-.89-1.26s.41-1.27.89-1.27.9.58.9,1.27S19.77,18.67,19.28,18.67Z"/>
+            <path d="M26.63,10.53l-.07-.09s0-.07,0-.1a12.15,12.15,0,0,0-6.8-4.15,1,1,0,1,0-.48,1.94,10.19,10.19,0,0,1,5.65,3.39A24.87,24.87,0,0,1,27,21.33a10,10,0,0,1-5,2.52v-.43s0-.05,0-.08a13.48,13.48,0,0,0,3.43-1.95,1,1,0,0,0-1.25-1.57A12.83,12.83,0,0,1,16,22.42a12.83,12.83,0,0,1-8.11-2.6,1,1,0,0,0-1.25,1.57,13.36,13.36,0,0,0,3.41,1.95v.51a10,10,0,0,1-5-2.52,24.87,24.87,0,0,1,2.09-9.81,10.19,10.19,0,0,1,5.65-3.39,1,1,0,0,0-.48-1.94,12.15,12.15,0,0,0-6.8,4.15s0,.07,0,.1l-.07.09c-1.94,4-2.16,7.65-2.37,11.14a1,1,0,0,0,.29.77A12,12,0,0,0,11,26h0a1,1,0,0,0,.7-.29,1,1,0,0,0,.3-.71V24A17.56,17.56,0,0,0,20,24v1a1,1,0,0,0,.3.71A1,1,0,0,0,21,26h0a12,12,0,0,0,7.74-3.51,1,1,0,0,0,.29-.77C28.79,18.18,28.57,14.57,26.63,10.53Z"/>
+            <path d="M23.49,11.72a1,1,0,0,0-.43-1.35A15.47,15.47,0,0,0,16,8.87a15.47,15.47,0,0,0-7.06,1.5,1,1,0,0,0-.43,1.35,1,1,0,0,0,1.35.42A13.55,13.55,0,0,1,16,10.87a13.55,13.55,0,0,1,6.14,1.27,1,1,0,0,0,.46.12A1,1,0,0,0,23.49,11.72Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="youtube" viewBox="0 0 32 32">
+        <g data-name="youtube youtuber video play" id="youtube_youtuber_video_play">
+            <path d="M30,12a5.71,5.71,0,0,0-5.31-5.7C18.92,6,13.06,6,7.33,6.28,4.51,6.28,2,9,2,12a43.69,43.69,0,0,0,0,8.72,5.32,5.32,0,0,0,5.28,5.33h0q4.35.24,8.72.24t8.67-.23A5.34,5.34,0,0,0,30,20.8,31.67,31.67,0,0,0,30,12Zm-2,8.63a.49.49,0,0,0,0,.12,3.36,3.36,0,0,1-3.39,3.34,166,166,0,0,1-17.28,0A3.36,3.36,0,0,1,4,20.65a42,42,0,0,1,0-8.47.45.45,0,0,0,0-.11A3.78,3.78,0,0,1,7.38,8.28c2.86-.13,5.74-.19,8.62-.19s5.76.06,8.62.19h.05c1.71,0,3.33,1.84,3.33,3.79a.76.76,0,0,0,0,.15A30.11,30.11,0,0,1,28,20.61Z"/>
+            <path d="M20.79,15.51l-7.14-3.68a1,1,0,1,0-.92,1.78l5.43,2.79-4,2.07V16.4a1,1,0,0,0-2,0v3.72a1,1,0,0,0,1,1,1,1,0,0,0,.46-.11l7.14-3.72a1,1,0,0,0,.54-.89A1,1,0,0,0,20.79,15.51Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="twitter" viewBox="0 0 32 32">
+        <g data-name="twitter bird social media trending" id="twitter_bird_social_media_trending">
+            <path d="M28.77,8.11a.87.87,0,0,0-.23-.2A4.69,4.69,0,0,0,29,6.54a1,1,0,0,0-.44-1,1,1,0,0,0-1.1,0,6.42,6.42,0,0,1-2.28.92,6.21,6.21,0,0,0-7.08-1A6.07,6.07,0,0,0,15,12.2a1,1,0,0,0,2-.4A4.08,4.08,0,0,1,19,7.28a4.24,4.24,0,0,1,5.12,1,1,1,0,0,0,.88.28l.25,0a1,1,0,0,0,.34,1.62,1,1,0,0,0-.36.88,13.07,13.07,0,0,1-4.89,11.24A12.75,12.75,0,0,1,7.69,24.61a9.06,9.06,0,0,0,4.54-2.18,1,1,0,0,0,.15-1.09,1,1,0,0,0-.93-.57,4,4,0,0,1-3-1.39,3.63,3.63,0,0,0,1-.35A1,1,0,0,0,10,18a1,1,0,0,0-.76-.84,4.42,4.42,0,0,1-3-2.48c.24,0,.48.05.74.06a1,1,0,0,0,1-.62A1,1,0,0,0,7.67,13C6,11.48,5.59,9.85,5.83,8.7a13.88,13.88,0,0,0,7,4,1,1,0,1,0,.38-2A12.1,12.1,0,0,1,6.39,6.31a1,1,0,0,0-.75-.38,1,1,0,0,0-.78.33,5.34,5.34,0,0,0-.31,6l-.09,0a1,1,0,0,0-.52.81,5.84,5.84,0,0,0,1.95,4.47,1,1,0,0,0-.18,1,6.63,6.63,0,0,0,3.18,3.57A13.89,13.89,0,0,1,4,23a1,1,0,0,0-.5,1.86A16.84,16.84,0,0,0,12,27.35a15.16,15.16,0,0,0,9.6-3.57,15.12,15.12,0,0,0,5.69-12.42,4.62,4.62,0,0,0,1.62-2.25A1,1,0,0,0,28.77,8.11Z"/>
+        </g>
+    </symbol>
+</svg>
+<svg display="none">
+    <symbol id="dribble" viewBox="0 0 32 32">
+        <g data-name="dribbble portfolio network media" id="dribbble_portfolio_network_media">
+            <path d="M16,3A13,13,0,1,0,29,16,13,13,0,0,0,16,3Zm8.55,6.09A11,11,0,0,1,27,15.82a18.76,18.76,0,0,0-7.81-.45c-.27-.65-.56-1.29-.85-1.92A18.74,18.74,0,0,0,24.55,9.09ZM16,5a11,11,0,0,1,7.16,2.66,16.54,16.54,0,0,1-5.72,4,40.39,40.39,0,0,0-3-4.78l-.27-.36a1,1,0,0,0-1.4-.19,1,1,0,0,0-.2,1.4l.26.33a36.45,36.45,0,0,1,2.68,4.29A34,34,0,0,1,5.29,13.54,11,11,0,0,1,16,5ZM5,16c0-.16,0-.31,0-.46H6.14a33.14,33.14,0,0,0,10.31-1.39c.27.56.52,1.11.76,1.69a17,17,0,0,0-7.81,5.3,1,1,0,0,0,.75,1.66,1,1,0,0,0,.76-.34A14.88,14.88,0,0,1,18,17.74,46.18,46.18,0,0,1,19.77,24c.14.71.27,1.43.38,2.14A10.82,10.82,0,0,1,16,27,11,11,0,0,1,5,16Zm17,9.2c-.09-.52-.18-1.05-.28-1.57a48.35,48.35,0,0,0-1.8-6.32,17.1,17.1,0,0,1,6.9.54A11,11,0,0,1,22,25.2Z"/>
+        </g>
+    </symbol>
+</svg>
+<!--Layout-->
 <header>
     <div class="container">
         <div class="row">
@@ -36,7 +78,7 @@
                     </button>
                 </div>
                 <div class="col">
-                    <button class="btn" >
+                    <button class="btn">
                         Pricing
                     </button>
                 </div>
@@ -51,7 +93,7 @@
 </header>
 <main>
     <section class="section_header">
-        <div class="container row d-flex justify-content-between">
+        <div class="container row d-flex align-content-center justify-content-between">
             <div class="col">
                 <h2 class="tittle description__tittle">Choose a better way to represent your app</h2>
                 <p class="text description__text">Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan
@@ -67,7 +109,7 @@
             </div>
         </div>
     </section>
-    <section class="main__service">
+    <section class="main__service d-flex align-content-center">
         <div class="container">
             <h2 class="tittle">Everything needed to power your app brend online</h2>
             <div class="line"></div>
@@ -99,30 +141,29 @@
             </div>
         </div>
     </section>
-    <section class="main__app">
+    <section class="main__app d-flex align-content-center">
         <div class="container">
-            <div class="app__images">
-                <img class="image-1" src="./assets/images/phone.png" alt="phone">
-                <img class="image-2" src="./assets/images/phone.png" alt="phone">
-            </div>
-            <div class="app__description">
-                <h2 class="tittle">Now Available</h2>
-                <p class="text">Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt.
-                    Vestibulum ac diam
-                    sit amet quam vehicula elementum sed sit amet dui. quam vehicula elementum sed sit ametsuada.</p>
-                <div class="app__buttons">
-                    <button class="app__buttons-google"></button>
-                    <button class="app__buttons-apple"></button>
+            <div class="row relative">
+                <div class="col d-flex align-content-center">
+                    <img src="./assets/images/Phones.png" alt="Phones">
                 </div>
+                <div class="col m-auto">
+                    <h2>Now Available</h2>
+                    <p>Cras ultricies ligula sed magna dictum porta. Nulla porttitor accumsan tincidunt. Vestibulum ac
+                        diam sit amet quam vehicula elementum sed sit amet dui. quam vehicula elementum sed sit
+                        ametsuada.</p>
+                    <div class="row">
+                        <img class="storeBtn" src="./assets/images/btnPM.png" alt="">
+                        <img class="storeBtn" src="./assets/images/BtnIStore.png" alt="">
+                    </div>
+                </div>
+                <button class="btn_abs buttonPrim btn">Get the app today</button>
             </div>
         </div>
-        <button class="buttons main__app-btn">
-            get the app today
-        </button>
     </section>
     <section class="main__about">
         <div class="container">
-            <div class="main__info">
+            <div class="d-flex mt-5 justify-content-around">
                 <div class="main__list">
                     <h2 class="tittle">Company</h2>
                     <ul class="text">
@@ -163,39 +204,68 @@
                     </ul>
                 </div>
             </div>
-            <div class="main__send">
+            <div class="d-flex mt-5 flex-column align-items-center">
                 <h2 class="tittle">Get In Touch</h2>
                 <p class="text">Subscribe to our newsletter and get notification for upcoming cool stuff</p>
-                <div class="form">
-                    <input placeholder="" type="text">
-                    <button>count me in</button>
+                <div class="form input-group mb-3 mt-3">
+                    <input type="text" class="form-control" aria-label="Recipient's username"
+                           aria-describedby="button-addon2">
+                    <button class="btn buttonPrim btn-outline-secondary" type="button" id="button-addon2">Count me in
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 </main>
 <footer class="footer">
-    <div class="container">
-        <p class="text">© 2018 - Appo,All Right Reserved</p>
-        <ul class="list">
+    <div class="container d-flex justify-content-between align-items-center">
+        <p class="text ">© 2018 - Appo,All Right Reserved</p>
+        <ul class="list d-flex justify-content-between">
             <li>
-                <img src="./assets/icon/fb.png" alt="social">
+                <a class="social" href="#">
+                    <svg>
+                        <use xlink:href="#facebook"></use>
+                    </svg>
+                </a>
+
             </li>
             <li>
-                <img src="./assets/icon/twitter.png" alt="social">
+                <a class="social" href="#">
+                    <svg>
+                        <use xlink:href="#discord"></use>
+                    </svg>
+                </a>
+
             </li>
             <li>
-                <img src="./assets/icon/dribble.png" alt="social">
+                <a class="social" href="#">
+                    <svg>
+                        <use xlink:href="#youtube"></use>
+                    </svg>
+                </a>
+
             </li>
             <li>
-                <img src="./assets/icon/google.png" alt="social">
+                <a class="social" href="#">
+                    <svg>
+                        <use xlink:href="#twitter"></use>
+                    </svg>
+                </a>
+
             </li>
             <li>
-                <img src="./assets/icon/youtube.png" alt="social">
+                <a class="social" href="#">
+                    <svg>
+                        <use xlink:href="#dribble"></use>
+                    </svg>
+                </a>
+
             </li>
         </ul>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
 </body>
 </html>

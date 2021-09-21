@@ -1,0 +1,54 @@
+.section_header {
+  background-color: $bg;
+  padding-top: 135px;
+  height: 630px;
+  @media (max-width: 400px) {
+    height: fit-content;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    margin: 0 auto;
+  }
+
+  .description {
+    max-width: 500px;
+    padding-top: 193px;
+    padding-left: 100px;
+    @media (max-width: 910px) {
+      padding: 0;
+    }
+
+    &__tittle {
+      color: #fff;
+      margin: 0 0 0 8px;
+      font-size: 40px;
+      font-weight: 500;
+      letter-spacing: .7px;
+    }
+
+    &__text {
+      margin-top: 55px;
+      letter-spacing: .3px;
+      color: #97a4be;
+      font-size: 14px;
+      line-height: 2.08;
+      max-width: 440px;
+    }
+  }
+
+  .buttons {
+    height: 40px;
+    width: 169px;
+    margin-top: 41px;
+    margin-left: 4px;
+  }
+
+  .reach_Btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    margin-left: 23px;
+    width: 145px;
+  }
+}

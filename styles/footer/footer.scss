@@ -1,0 +1,24 @@
+.footer {
+  background-color: $bg;
+  color: #ffffff;
+
+  .list {
+    list-style: none;
+    width: 300px;
+  }
+
+  .social {
+    transition: 500ms;
+    svg {
+      width: 30px;
+      fill: #ffffff;
+    }
+    :hover {
+        fill: $primary;
+    }
+    :active {
+      transform: rotate(360deg);
+    }
+  }
+}
+

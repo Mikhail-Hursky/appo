@@ -1,0 +1,30 @@
+header {
+  background-color: $bg;
+  height: 69px;
+  border-bottom: 1px solid #4e596c;
+  .tittle {
+    h1,sup {
+      color: $primary;
+    }
+  }
+  .navigation {
+    margin-top: 10px;
+    .btn {
+      color: $secondary
+    }
+  }
+}
+
+.menu {
+  outline: none;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  svg{
+    fill: $primary;
+    width: 40px;
+    height: 40px;
+  }
+}
+
